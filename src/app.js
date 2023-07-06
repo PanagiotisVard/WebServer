@@ -30,6 +30,11 @@ app.get('/weather', (req, res)=>{
     )
 })
 
+app.get('/help', (req, res)=>{
+    res.render('help',{
+        phone: '6999999999'})
+})
+
 app.listen(3000, ()=>{
     console.log('Server is up on port 3000.')
 })
