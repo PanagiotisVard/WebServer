@@ -51,8 +51,22 @@ app.get('/help', (req, res)=>{
     })
 })
 
+app.get('/help/*', (req, res)=>{
+    res.render('404',{
+        title: '404',
+        name: 'Panos',
+        errorMessage: 'Page not found.'
+
+    })
+})
+
+
 app.get('*',(req,res)=>{
-    res.send('Error 404 page')
+    res.render('404',{
+        title: '404',
+        name: 'Panos',
+        errorMessage: 'Page not found'
+    })
 })
 
 

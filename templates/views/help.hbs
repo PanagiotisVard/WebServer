@@ -3,13 +3,17 @@
 <html>
 
 <head>
-
-
+    <title>Help</title>
+    <link rel="icon" href="/img/cloud.png">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body style="background-color:gray;">
-    {{>header}}
-    <p1>If a problem shows up call this phone number : {{phone}}</p1>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>{{helpText}}</p>
+    </div>
+    
     {{>footer}}
 </body>
 
